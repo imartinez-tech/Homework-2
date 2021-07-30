@@ -1,112 +1,16 @@
-/* Create CSS variables at the root of the document to be used throughout the style sheet */
-:root {
-  --white: #fff;
-  --Gray: #41474d;
-  --Blueish: #24928d8f;
-  /* You can use it with any value that is repeated throughout the sheet */
-  --border-radius: 50px;
+body {
+  background-color: slategray;
 }
 
-
-
-body {
-  
-  font-size: 40px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
-  }
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+.container-fluid {
+  background-color: slategray;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  text-align: right;
-}
+background-color: slategray;}
 
-
-header {
-  padding: 40px;
-  text-align: center;
-  background: var(--Gray);
-  color: black;
-}
-
-nav {
-  display: flex;
-  background-color: var(--Blueish);
-  
-  
-}
-
-nav a {
-  color: var(--Gray);
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-nav a:hover {
- background-color: var(--white);
-  color: var(--Gray);
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: var(--Blueish);
-}
-
-footer {
-  width: 100%;
-  bottom: 0;
-  padding: 20px;
-  text-align: center;
-  background: var(--Gray);
-  color: var(--white);
-  margin-top: auto;
-}
-
-.Subtitles {
-  flex: 1;
-  background: var(--Blueish);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.card {
-  border-style: solid;
-  border-width: 3px;
-  border-radius: var(--border-radius);
-  padding: 10px;
-  flex: 0 0 300px;
-  box-shadow: 10px 10px 30px #aaaaaa;
-  margin: 30px;
-  
-}
-
-
-
-.card > header {
-  /* This is the same as `border-radius: 50px 50px 0 0 */
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  padding: 20px;
-}
-
-.card > p {
-  text-align: center;
-}
-
-.card > img {
-  width: 100%;
+a { 
+  color: azure;
 }
 
 @media screen and (max-width: 768px) {
