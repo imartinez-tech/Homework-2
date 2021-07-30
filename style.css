@@ -1,0 +1,21 @@
+body {
+  background-color: slategray;
+}
+
+.container-fluid {
+  background-color: slategray;
+}
+
+h2 {
+background-color: slategray;}
+
+a { 
+  color: azure;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: row;
+  }
+}
